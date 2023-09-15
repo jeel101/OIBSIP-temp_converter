@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <a target="_blank" href="https://icons8.com/icon/6yomF9LAoWai/temperature-high">Temperature</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="javascript.js" defer></script>
+</head>
+
+<body>
+
+    <div class="title">
+
+        <h1><img src="icons8-temperature-30.png" alt="thermometer">Temperature converter</h1>
+        <p>Convert <span>celcius</span> to <span>farenheit</span> or vice-versa.</p>
+    </div>
+
+    <div class="container">
+        <form action="" onsubmit="converting(); return false">
+            <label for="">
+                <div class="text">
+                    <p id="celText">Temperature in degree celcius:</p>
+                </div>
+                <input type="number" id="celcius"> <p id="celp">°C</p>
+            </label>
+
+            <label for="">
+                <div class="text">
+                    <p id="farText">Temperature in farenheit:</p>
+                </div>
+                <input type="text" id="output"><p id="farp">°F</p>
+            </label>
+
+            <div class="btn">
+                <button type="submit" id="sub">Convert</button>
+                <button type="button" id="swapbtn"><img src="icons8-swap-30.png" alt="swap"></button>
+                <button type="reset" id="resetbtn">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
